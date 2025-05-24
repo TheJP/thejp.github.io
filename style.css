@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "FredokaOne";
+    src: url(https://thejp.github.io/fonts/FredokaOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "FamiljenGrotesk";
+    src: url(https://thejp.github.io/fonts/FamiljenGrotesk-Regular.ttf) format("truetype");
+}
+
+a {
+    color: #60439a;
+}
+
+a:hover,
+a:focus {
+    color: #fdbc48;
+}
+
+/* Title */
+
+body {
+    background-color: #6ac071;
+}
+
+.page-header {
+    background-color: #60439a;
+    padding: 5px 6rem;
+    text-align: center;
+}
+
+.page-title {
+    color: #6ac071;
+    font-family: "FredokaOne", sans-serif;
+    font-size: 4.8rem;
+    margin: 2rem 0;
+}
+
+.page-tagline {
+    color: #fdbc48;
+    font-family: "FamiljenGrotesk", sans-serif;
+    font-size: 4.2rem;
+    margin: 2rem 0;
+}
+
+.section-title {
+    color: #60439a;
+    font-family: "FamiljenGrotesk", sans-serif;
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+@media (max-width: 800px) {
+    .page-header {
+        padding: 1rem 2rem;
+    }
+
+    .page-title {
+        font-size: 2.25rem;
+    }
+
+    .page-tagline {
+        font-size: 2rem;
+    }
+}
+
+/* Links */
+
+#content {
+    width: 425px;
+    margin: 2rem auto;
+}
+
+.content-link {
+    display: block;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    width: calc(425px - 4rem);
+
+    font-size: 1.8rem;
+    font-family: "FamiljenGrotesk", sans-serif;
+    text-decoration: none;
+
+    color: #6ac071;
+    background-color: #60439a;
+
+    transition: 0.25s;
+}
+
+.content-link img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    vertical-align: bottom;
+
+    filter: invert(61%) sepia(67%) saturate(298%) hue-rotate(75deg) brightness(97%) contrast(88%);
+    transition: 0.25s;
+}
+
+.content-link:hover,
+.content-link:focus {
+    color: #60439a;
+    background-color: #fdbc48;
+    transform: translateY(-0.1em) translateX(0.1em);
+}
+
+.content-link:hover img,
+.content-link:focus img {
+    filter: invert(29%) sepia(18%) saturate(3015%) hue-rotate(226deg) brightness(90%) contrast(87%);
+    /* filter: invert(94%) sepia(14%) saturate(4164%) hue-rotate(321deg) brightness(102%) contrast(102%); */
+}
+
+@media (max-width: 800px) {
+    #content {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .content-link {
+        width: calc(100% - 6rem);
+        font-size: 1.2rem;
+    }
+
+    .content-link img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
